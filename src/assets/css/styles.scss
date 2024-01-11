@@ -1,4 +1,6 @@
 // Import variables
+
+@import 'D:/github repos/rocket.dev/node_modules/bootstrap/scss/bootstrap.scss';
 @import 'variables';
 @import 'buttons';
 @import 'nav';
@@ -53,8 +55,6 @@ body {
 .bg-image {
   background: no-repeat center center/cover;
 }
-
-
 
 .vh-55 {
   min-height: 55svh;
