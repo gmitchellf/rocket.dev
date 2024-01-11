@@ -6,5 +6,5 @@ launch.json
 /package.json
 /yarn.lock
 /.parcel-cache
-/src
+
 /package-lock.json

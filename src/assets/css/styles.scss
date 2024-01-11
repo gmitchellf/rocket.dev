@@ -1,5 +1,4 @@
 // Import variables
-
 @import 'D:/github repos/rocket.dev/node_modules/bootstrap/scss/bootstrap.scss';
 @import 'variables';
 @import 'buttons';
@@ -7,25 +6,26 @@
 @import 'colours';
 @import 'cards';
 
-
 /* Body Styles */
 body {
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: $darkPurple;
+
   a {
     color: inherit;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
       color: inherit;
     }
   }
 }
 
-.rocketDevPadding img{
-  padding-bottom:1rem;
-  padding-top: .55rem;
+.rocketDevPadding img {
+  padding-bottom: 1rem;
+  padding-top: 0.55rem;
 }
 
 /* Home Header Styles */
@@ -45,7 +45,8 @@ body {
     object-fit: cover;
     pointer-events: none;
   }
-  .introText{
+
+  .introText {
     z-index: 2;
     background-color: $darkTransparent;
   }
@@ -72,11 +73,10 @@ body {
   min-height: 15svh;
 }
 
-.set-size-25{
+.set-size-25 {
   height: 2.5rem;
   width: 2.5rem;
 }
-
 
 @media (min-width: 768px) {
   .animate {
@@ -87,7 +87,7 @@ body {
   }
 }
 
-.dropdown-menu[data-bs-popper]{
+.dropdown-menu[data-bs-popper] {
   top: 110%;
 }
 
@@ -101,27 +101,17 @@ body {
     transform: translateY(0rem);
     opacity: 1;
   }
-
-  0% {
-    transform: translateY(-1rem);
-    opacity: 0;
-  }
 }
 
 @-webkit-keyframes slideIn {
   0% {
-    -webkit-transform: transform;
+    -webkit-transform: translateY(1rem);
     -webkit-opacity: 0;
   }
 
   100% {
     -webkit-transform: translateY(0);
     -webkit-opacity: 1;
-  }
-
-  0% {
-    -webkit-transform: translateY(1rem);
-    -webkit-opacity: 0;
   }
 }
 
@@ -130,21 +120,23 @@ body {
   animation-name: slideIn;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   margin-top: 1rem;
   border: 0;
   border-radius: 0;
   background-color: $darkPurple;
-  .dropdown-item{
+
+  .dropdown-item {
     color: white;
-    &:hover{
+
+    &:hover {
       background-color: $primary;
       color: $darkPurple;
     }
   }
 }
 
-.center-vertically{
+.center-vertically {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -158,27 +150,33 @@ body {
   border: 0;
   border-color: $darkerPurple;
   border-radius: 0;
-  .accordion-item{
+
+  .accordion-item {
     border: 0;
   }
-  .accordion-button{
+
+  .accordion-button {
     background-color: $primary;
     color: white;
     border: 0;
-    border-radius: 0!important;
+    border-radius: 0 !important;
     box-shadow: none;
-    &:hover{
+
+    &:hover {
       background-color: $secondary;
       color: $darkPurple;
-      &::after{
+
+      &::after {
         filter: brightness(0);
       }
     }
-    &::after{
+
+    &::after {
       filter: brightness(10);
     }
   }
-  .accordion-body{
+
+  .accordion-body {
     background-color: $darkPurple;
     color: white;
     border: 0;
@@ -186,7 +184,7 @@ body {
   }
 }
 
-.parallax-block{
+.parallax-block {
   background-image: url(../images/landscapeBackdrop.png);
   background-attachment: fixed;
   background-position: top;
@@ -195,7 +193,8 @@ body {
   width: 100%;
   position: relative;
   z-index: 1;
-  .parallax-text{
+
+  .parallax-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -203,12 +202,14 @@ body {
     color: white;
     text-align: center;
     z-index: 2;
-    h1{
+
+    h1 {
       font-size: 3rem;
       font-weight: 700;
       margin-bottom: 1rem;
     }
-    p{
+
+    p {
       font-size: 1.5rem;
       font-weight: 400;
     }
@@ -216,23 +217,22 @@ body {
 }
 
 // Z Index Classes
-
-.z-1{
+.z-1 {
   z-index: 1;
 }
 
-.z-2{
+.z-2 {
   z-index: 2;
 }
 
-.z-3{
+.z-3 {
   z-index: 3;
 }
 
-.z-4{
+.z-4 {
   z-index: 4;
 }
 
-.z-5{
+.z-5 {
   z-index: 5;
 }
