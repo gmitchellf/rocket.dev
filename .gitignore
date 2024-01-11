@@ -2,3 +2,7 @@
 *.css
 *.css.map
 launch.json
+/node_modules
+/package.json
+/yarn.lock
+/.parcel-cache
