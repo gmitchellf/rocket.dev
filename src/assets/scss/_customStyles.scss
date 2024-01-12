@@ -1,11 +1,3 @@
-// Import variables
-@import 'D:/github repos/rocket.dev/node_modules/bootstrap/scss/bootstrap.scss';
-@import 'variables';
-@import 'buttons';
-@import 'nav';
-@import 'colours';
-@import 'cards';
-
 /* Body Styles */
 body {
   font-family: "futura-pt", sans-serif;
@@ -30,7 +22,7 @@ body {
 
 /* Home Header Styles */
 #homeHeader {
-  background-image: url(../images/landscapeBackdrop.png);
+  background-image: url(./assets/images/landscapeBackdrop.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -185,7 +177,7 @@ body {
 }
 
 .parallax-block {
-  background-image: url(../images/landscapeBackdrop.png);
+  background-image: url(./assets/images/landscapeBackdrop.png);
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;

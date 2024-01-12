@@ -3,6 +3,7 @@
 // Background Colours
 .bg-primary {
     background-color: $primary !important;
+    --bs-bg-opacity: 1;
 }
 
 .bg-secondary {
