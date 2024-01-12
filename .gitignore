@@ -8,3 +8,4 @@ launch.json
 /.parcel-cache
 
 /package-lock.json
+/src/assets/external
