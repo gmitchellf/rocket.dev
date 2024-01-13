@@ -9,75 +9,63 @@
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/lnk3zlh.css">
 
-    
-
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
 
-    <section id="homeHeader" class="py-5 text-secondary vh-100">
-        <video class="d-none h-100 w-100" autoplay muted loop>
-            <source src="assets/videos/spaceV3.mp4" type="video/mp4">
-        </video>
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand rocketDevPadding" href="#">
-                    <img class="h-100" width="120" src="assets/images/logo/wTextWhite.svg" alt="">
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggler-icon top-bar"></span>
-                    <span class="toggler-icon middle-bar"></span>
-                    <span class="toggler-icon bottom-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active d-none" aria-current="page" href="#">home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#introBlock">what we do...</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#caseStudiesBlock">who we've helped...</a>
-                        </li>
-                        <li class="d-none nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                who we helped
-                            </a>
-                            <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">case study 1</a></li>
-                                <li><a class="dropdown-item" href="#">case study 2</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">portfolio</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#toolboxBlock">our toolbox</a>
-                        </li>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky z-10" style="top:0;">
+        <div class="container">
+            <a class="navbar-brand rocketDevPadding svg-color" href="#">
+                <include src="./src/partials/textLogo.html"></include>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse pb-2 pb-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active d-none" aria-current="page" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introBlock">what we do...</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#caseStudiesBlock">who we've helped...</a>
+                    </li>
+                    <li class=" nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Its a dropdown, YAY
+                        </a>
+                        <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">case study 1</a></li>
+                            <li><a class="dropdown-item" href="#">case study 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#toolboxBlock">our toolbox</a>
+                    </li>
 
-                    </ul>
-                    <button class="btn btn-secondary me-1 rounded-circle set-size-25 mb-3 mb-lg-0" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="Call us">
-                        <a href=""><i class="fas fa-phone"></i></a>
-                    </button>
-                    <button class="btn btn-secondary mx-1 rounded-circle set-size-25 mb-3 mb-lg-0" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="Message us">
-                        <a hreR=""><i class="fas fa-envelope"></i></a>
-                    </button>
-                    <button class="btn btn-secondary ms-1 rounded-circle set-size-25 mb-3 mb-lg-0" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="Meet us">
-                        <a href=""><i class="fas fa-calendar"></i></a>
-                    </button>
-                </div>
+                </ul>
+                <include src="./src/partials/pageBlocks/contactBtns.html"></include>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <section id="homeHeader" class="py-5 text-primary vh-85">
+        <video class="h-100 w-100" autoplay muted loop>
+            <source src="assets/videos/spaceV4.mp4" type="video/mp4">
+        </video>
 
         <div class="py-5" id="homeHero">
             <include src="./src/partials/pageBlocks/headerV1.html"></include>
@@ -96,7 +84,8 @@
                 <div class="col-12 col-lg-4">
                     <div class="card text-center bg-transparent border-0 service-card">
                         <div class="card-header bg-darker">
-                            <h3 class="card-title text-primary pt-2"><i class="far fa-window-maximize"></i><br> your dream website</h3>
+                            <h3 class="card-title text-primary pt-2"><i class="far fa-window-maximize"></i><br> your
+                                dream website</h3>
                         </div>
                         <div class="card-body bg-dark">
                             <p class="text-white lead mb-4 ">
@@ -112,7 +101,8 @@
                 <div class="col-12 col-lg-4">
                     <div class="card text-center bg-transparent border-0 service-card">
                         <div class="card-header bg-darker">
-                            <h3 class="card-title text-primary pt-2"><i class="fa-solid fa-crosshairs"></i><br> get noticed</h3>
+                            <h3 class="card-title text-primary pt-2"><i class="fa-solid fa-crosshairs"></i><br> get
+                                noticed</h3>
                         </div>
                         <div class="card-body bg-dark">
                             <p class="text-white lead mb-4">
@@ -150,26 +140,31 @@
     <section id="caseStudiesBlock" class="parallax-block text-primary position-relative">
         <div class="py-4 bg-dark-transparent">
             <div class="container py-4">
-                <h2 class="h1  text-center"><i class="fas fa-handshake-angle"></i> who we've helped...</h2>
-                <p class="lead pb-3 text-center">take a look at the sites linked below to see our work in their final form</p>
+                <h2 class="h1  text-center"><i class="fas fa-handshake-angle"></i><br> Who we have helped.</h2>
+                <p class="lead pb-3 text-center">take a look at the sites linked below to see our work in their final
+                    form</p>
                 <div class="hover-card-container justify-content-center row row-cols-1 row-cols-lg-4">
                     <include src="./src/partials/fields/cardV1.html" locals='{
-                        "title" : "pink paws",
-                        "description" : "a small vetinary clinic in the heart of cornwall, Pink Paws wanted a site to wow their clients whilst also making booking easy and automated...",
-                        "link" : "#"
+                        "title" : "Finer Finish",
+                        "image" : "assets/images/siteCaptures/finerFinish.png",
+                        "description" : "Specialising in component cleaning/restoration services, Finer Finish needed a site that would showcase their work and attract new clients...",
+                        "link" : "https://gmitchellf.github.io/finerfinish/"
                     }'></include>
                     <include src="./src/partials/fields/cardV1.html" locals='{
-                        "title" : "example 2",
-                        "description" : "lore ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua egain ut enim ad minim.",
+                        "title" : "Pink Paws",
+                        "image" : "assets/images/siteCaptures/placeholder.png",
+                        "description" : "A vetinary clinic in the heart of cornwall, Pink Paws wanted a site to wow their clients whilst also making booking easy and automated...",
                         "link" : "#"
                     }'></include>
                     <include src="./src/partials/fields/cardV1.html" locals='{
                         "title" : "example 3",
+                        "image" : "assets/images/siteCaptures/placeholder.png",
                         "description" : "lore ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua egain ut enim ad minim.",
                         "link" : "#"
                     }'></include>
                     <include src="./src/partials/fields/cardV1.html" locals='{
                         "title" : "example 4",
+                        "image" : "assets/images/siteCaptures/placeholder.png",
                         "description" : "lore ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua egain ut enim ad minim.",
                         "link" : "#"
                     }'></include>
@@ -183,8 +178,9 @@
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between">
                 <div class="col-lg-6 mt-5 my-lg-5 pb-4 pb-lg-0 bg-darkTransparent">
-                    <h2 class="h1  mb-0 mb-lg-3"><i class="fas fa-circle-info"></i>  about rocket.dev</h2>
-                    <p class="lead">a small team of dedicated, experienced developers & designers based out in cornwall. we
+                    <h2 class="h1  mb-0 mb-lg-3"><i class="fas fa-circle-info"></i> About rocket.dev</h2>
+                    <p class="lead">a small team of dedicated, experienced developers & designers based out in cornwall.
+                        we
                         love what we do, and we love helping our clients achieve their goals.
                     </p>
                     <p>here are rocket.dev we pride ourselves on our ability to deliver high quality, bespoke websites
@@ -204,22 +200,12 @@
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-12 col-lg-7 text-center text-lg-end">
-                        <h2 class="h1 ">get in touch...</h2>
-                        <p class="lead">call us, message us or even just book a meeting and we can get started on your next project!</p>
+                        <h2 class="h1 ">Get in touch...</h2>
+                        <p class="lead">call us, message us or even just book a meeting and we can get started on your
+                            next project!</p>
                     </div>
                     <div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-start">
-                        <button class="btn btn-secondary me-1 rounded-circle set-size-25" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Call us">
-                            <a href=""><i class="fas fa-phone"></i></a>
-                        </button>
-                        <button class="btn btn-secondary mx-1 rounded-circle set-size-25" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Message us">
-                            <a href=""><i class="fas fa-envelope"></i></a>
-                        </button>
-                        <button class="btn btn-secondary ms-1 rounded-circle set-size-25" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Meet us">
-                            <a href=""><i class="fas fa-calendar"></i></a>
-                        </button>
+                        <include src="./src/partials/pageBlocks/contactBtns.html"></include>
                     </div>
                 </div>
             </div>
@@ -230,8 +216,9 @@
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between">
                 <div class="col mt-5 my-lg-5 pb-4 pb-lg-0 bg-darkTransparent">
-                    <h2 class="h1  text-center"><i class="fas fa-toolbox"></i> in our toolbox...</h2>
-                    <p class="lead pb-3 text-center">a little bit about the tech we use. its not all we can do, but its a good start for
+                    <h2 class="h1  text-center"><i class="fas fa-toolbox"></i><br> Whats in the toolbox ?</h2>
+                    <p class="lead pb-3 text-center">a little bit about the tech we use. its not all we can do, but its
+                        a good start for
                         the basics.</p>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -311,9 +298,11 @@
         <div class="container bg-dark-transparent">
             <div class="row py-3">
                 <div class="col text-center text-secondary">
-                    <h2><i class="fa-solid fa-face-dizzy"></i> not ready to take the plunge?</h2>
+                    <h2><i class="fa-solid fa-face-dizzy"></i><br> Not ready to take the plunge?</h2>
                     <p class="lead px-5">
-                        not to worry, we have a range of resources available to help you get started on your next project. check out our blog for some handy tips and tricks, or take a look at our portfolio to see what we've done for other clients.
+                        not to worry, we have a range of resources available to help you get started on your next
+                        project. check out our blog for some handy tips and tricks, or take a look at our portfolio to
+                        see what we've done for other clients.
 
                     </p>
                 </div>
@@ -322,49 +311,18 @@
 
     </section>
 
+    <section id="backToTop">
+        <button class="btn btn-secondary rounded-0 position-fixed" id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+    </section>
+
     <footer class="border-top border-darker">
         <div class="container">
             <footer class="py-3 my-4 text-primary row justify-content-center d-flex">
-                <ul class="nav col-4 pb-2 mb-2 justify-content-center list-unstyled d-flex border-darker border-bottom">
-                    <li class="mx-1" data-bs-toggle="tooltip" data-bs-placement="top" title="twitter/x">
-                        <a class="socialIcon" href="#">
-                            <i class="fab fa-x-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="mx-1" data-bs-toggle="tooltip" data-bs-placement="top" title="instagram">
-                        <a class="socialIcon" href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="mx-1" data-bs-toggle="tooltip" data-bs-placement="top" title="facebook">
-                        <a class="socialIcon" href="#">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-
-                </ul>
+                <include src="./src/partials/pageBlocks/socialBtns.html"></include>
                 <p class="text-center">© 2024 Company, Inc</p>
             </footer>
         </div>
     </footer>
-
-    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
     <!--Bootstrap Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -379,15 +337,8 @@
     <!-- Custom Scripts -->
     <script src="assets/js/functions.js"></script>
 
-    <script>
-        // Enable Bootstrap tooltips
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl, {
-                template: '<div class="tooltip custom-tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
-            });
-        });
-    </script>
+    <include src="./src/partials/pageBlocks/formModal.html"></include>
+
 
 
 </body>

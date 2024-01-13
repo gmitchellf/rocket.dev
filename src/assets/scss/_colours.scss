@@ -10,12 +10,12 @@
     background-color: $secondary !important;
 }
 
-.bg-tirtiary {
-    background-color: $tirtiary !important;
+.bg-tertiary {
+    background-color: $tertiary !important;
 }
 
 .bg-dark {
-    background-color: $darkPurple !important;
+    background-color: $dark !important;
 }
 
 .bg-dark-transparent {
@@ -23,7 +23,7 @@
 }
 
 .bg-darker {
-  background-color: $darkerPurple;
+    background-color: $darker;
 }
 
 // Text Colours
@@ -35,16 +35,16 @@
     color: $secondary !important;
 }
 
-.text-tirtiary {
-    color: $tirtiary !important;
+.text-tertiary {
+    color: $tertiary !important;
 }
 
 .text-dark {
-    color: $darkPurple !important;
+    color: $dark !important;
 }
 
 .text-darker {
-  color: $darkerPurple !important;
+    color: $darker !important;
 }
 
 // Border Colours  
@@ -57,14 +57,39 @@
     border-color: $secondary !important;
 }
 
-.border-tirtiary {
-    border-color: $tirtiary !important;
+.border-tertiary {
+    border-color: $tertiary !important;
 }
 
 .border-dark {
-    border-color: $darkPurple !important;
+    border-color: $dark !important;
 }
 
 .border-darker {
-  border-color: $darkerPurple !important;
+    border-color: $darker !important;
+}
+
+// SVG Logo Colours
+
+//Full Colour Options
+.svg-color .cls-white {
+    fill: $white!important;
+}
+
+.svg-color .cls-primary {
+    fill: $primary!important;
+}
+
+.svg-color .cls-secondary {
+    fill: $secondary!important;
+}
+
+.svg-color .cls-tertiary {
+    fill: $tertiary!important;
+}
+
+// Monochrome Options
+
+.svg-mono .cls-white, .svg-mono .cls-primary, .svg-mono .cls-secondary, .svg-mono .cls-tertiary {
+    fill: $darker!important;
 }
