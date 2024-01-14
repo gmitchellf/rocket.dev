@@ -62,7 +62,7 @@
         </div>
     </nav>
 
-    <section id="homeHeader" class="py-5 text-primary vh-85">
+    <section id="homeHeader" class="py-5 vh-85">
         <video class="h-100 w-100" autoplay muted loop>
             <source src="assets/videos/spaceV4.mp4" type="video/mp4">
         </video>
@@ -73,74 +73,44 @@
 
     </section>
 
-    <section id="introBlock" class="text-secondary">
+    <section id="introBlock" class="">
         <div class="container py-5">
             <div class="col-12 pb-4">
-                <h2 class="h1  text-center"><i class="fas fa-briefcase"></i> what we do...</h2>
+                <h2 class="h1 text-primary text-center"><i class="fas fa-briefcase"></i> what we do...</h2>
                 <p class="lead text-center">take a look & see what we can do for your next project</p>
             </div>
 
             <div class="row d-flex justify-content-center">
-                <div class="col-12 col-lg-4">
-                    <div class="card text-center bg-transparent border-0 service-card">
-                        <div class="card-header bg-darker">
-                            <h3 class="card-title text-primary pt-2"><i class="far fa-window-maximize"></i><br> your
-                                dream website</h3>
-                        </div>
-                        <div class="card-body bg-dark">
-                            <p class="text-white lead mb-4 ">
-                                Turn your vision into reality with our expert website design. Our team crafts visually
-                                stunning, user-friendly sites that reflect your brand and captivate your audience.
-                            </p>
-                            <button class="read-more-btn">
-                                <a href="#">read more</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card text-center bg-transparent border-0 service-card">
-                        <div class="card-header bg-darker">
-                            <h3 class="card-title text-primary pt-2"><i class="fa-solid fa-crosshairs"></i><br> get
-                                noticed</h3>
-                        </div>
-                        <div class="card-body bg-dark">
-                            <p class="text-white lead mb-4">
-                                Boost your online presence with our comprehensive SEO services. We optimize your site,
-                                increasing visibility and ensuring your brand stands out in the digital landscape.
-                            </p>
-                            <button class="read-more-btn">
-                                <a href="#">read more</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card text-center bg-transparent border-0 service-card">
-                        <div class="card-header bg-darker">
-                            <h3 class="card-title text-primary pt-2"><i class="fas fa-bug"></i><br> fix those bugs</h3>
-                        </div>
-                        <div class="card-body bg-dark">
-                            <p class="text-white lead mb-4">
-                                Say goodbye to downtime with our reliable maintenance & bug fixing services. Our
-                                dedicated team
-                                resolves issues promptly, keeping your website running smoothly.
-                            </p>
-                            <button class="read-more-btn">
-                                <a href="#">read more</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                <include src="./src/partials/fields/card-wModalV1.html" locals='{
+                    "title" : "your dream website",
+                    "icon" : "far fa-window-maximize",
+                    "id" : "websiteDesignModal",
+                    "description" : "Turn your vision into reality with our expert website design. Our team crafts visually stunning, user-friendly sites that reflect your brand and captivate your audience.",
+                    "longdescription" : "Our team of expert designers will work closely with you to create a website that reflects your brand and captivates your audience. We take the time to understand your vision, ensuring that your site is a true reflection of your business. We also offer a range of other services, including SEO, maintenance, and bug fixing. Whatever your needs, we have you covered."
+                }'></include>
+                <include src="./src/partials/fields/card-wModalV1.html" locals='{
+                    "title" : "get noticed",
+                    "icon" : "fas fa-crosshairs",
+                    "id" : "seoModal",
+                    "description" : "Boost your online presence with our comprehensive SEO services. We optimize your site, increasing visibility and ensuring your brand stands out in the digital landscape.",
+                    "longdescription" : "Our team of SEO experts will work closely with you to ensure that your site is optimized for search engines. We take the time to understand your business and your goals, ensuring that we deliver results that exceed expectations. We also offer a range of other services, including website design, maintenance, and bug fixing. Whatever your needs, we have you covered."
+                }'></include>
+                <include src="./src/partials/fields/card-wModalV1.html" locals='{
+                    "title" : "fix those bugs",
+                    "icon" : "fas fa-bug",
+                    "id" : "bugFixingModal",
+                    "description" : "Say goodbye to downtime with our reliable maintenance & bug fixing services. Our dedicated team resolves issues promptly, keeping your website running smoothly",
+                    "longdescription" : "Our team of expert developers will work closely with you to ensure that your site is running smoothly. We take the time to understand your business and your goals, ensuring that we deliver results that exceed expectations. We also offer a range of other services, including website design, SEO, and bug fixing. Whatever your needs, we have you covered."
+                }'></include>
             </div>
 
         </div>
     </section>
 
-    <section id="caseStudiesBlock" class="parallax-block text-primary position-relative">
+    <section id="caseStudiesBlock" class="parallax-block  position-relative">
         <div class="py-4 bg-dark-transparent">
             <div class="container py-4">
-                <h2 class="h1  text-center"><i class="fas fa-handshake-angle"></i><br> Who we have helped.</h2>
+                <h2 class="h1 text-primary text-center"><i class="fas fa-handshake-angle"></i><br> Who we have helped.</h2>
                 <p class="lead pb-3 text-center">take a look at the sites linked below to see our work in their final
                     form</p>
                 <div class="hover-card-container justify-content-center row row-cols-1 row-cols-lg-4">
@@ -156,29 +126,17 @@
                         "description" : "A vetinary clinic in the heart of cornwall, Pink Paws wanted a site to wow their clients whilst also making booking easy and automated...",
                         "link" : "#"
                     }'></include>
-                    <include src="./src/partials/fields/cardV1.html" locals='{
-                        "title" : "example 3",
-                        "image" : "assets/images/siteCaptures/placeholder.png",
-                        "description" : "lore ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua egain ut enim ad minim.",
-                        "link" : "#"
-                    }'></include>
-                    <include src="./src/partials/fields/cardV1.html" locals='{
-                        "title" : "example 4",
-                        "image" : "assets/images/siteCaptures/placeholder.png",
-                        "description" : "lore ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua egain ut enim ad minim.",
-                        "link" : "#"
-                    }'></include>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section id="aboutBlock" class="text-secondary z-5 bg-dark position-relative">
+    <section id="aboutBlock" class=" z-5 bg-dark position-relative">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between">
                 <div class="col-lg-6 mt-5 my-lg-5 pb-4 pb-lg-0 bg-darkTransparent">
-                    <h2 class="h1  mb-0 mb-lg-3"><i class="fas fa-circle-info"></i> About rocket.dev</h2>
+                    <h2 class="h1 text-primary mb-0 mb-lg-3"><i class="fas fa-circle-info"></i> About rocket.dev</h2>
                     <p class="lead">a small team of dedicated, experienced developers & designers based out in cornwall.
                         we
                         love what we do, and we love helping our clients achieve their goals.
@@ -195,12 +153,12 @@
         </div>
     </section>
 
-    <section id="cta" class="parallax-block text-primary">
+    <section id="cta" class="parallax-block ">
         <div class="bg-dark-transparent py-4">
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-12 col-lg-7 text-center text-lg-end">
-                        <h2 class="h1 ">Get in touch...</h2>
+                        <h2 class="h1 text-primary">Get in touch...</h2>
                         <p class="lead">call us, message us or even just book a meeting and we can get started on your
                             next project!</p>
                     </div>
@@ -212,11 +170,11 @@
         </div>
     </section>
 
-    <section id="toolboxBlock" class="text-secondary vh-45">
+    <section id="toolboxBlock" class=" vh-45">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between">
                 <div class="col mt-5 my-lg-5 pb-4 pb-lg-0 bg-darkTransparent">
-                    <h2 class="h1  text-center"><i class="fas fa-toolbox"></i><br> Whats in the toolbox ?</h2>
+                    <h2 class="h1 text-primary text-center"><i class="fas fa-toolbox"></i><br> Whats in the toolbox ?</h2>
                     <p class="lead pb-3 text-center">a little bit about the tech we use. its not all we can do, but its
                         a good start for
                         the basics.</p>
@@ -261,6 +219,33 @@
                             </div>
                         </div>
                         <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Ecommerce & Payment Gateways
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        We can build you a fully functional ecommerce site, complete with payment
+                                        gateways and stock management. We can also integrate your site with your
+                                        existing stock management system, or even build you a custom one from the
+                                        ground up. Whatever your needs, we have you covered.
+                                    </p>
+                                    <p>
+                                        We can also integrate your site with a range of payment gateways, including
+                                        paypal, stripe and even crypto currency. Whatever your needs, we have you
+                                        covered.
+                                    </p>
+
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -297,7 +282,7 @@
     <section id="thirdBlock" class="parallax-block py-5">
         <div class="container bg-dark-transparent">
             <div class="row py-3">
-                <div class="col text-center text-secondary">
+                <div class="col text-center text-primary">
                     <h2><i class="fa-solid fa-face-dizzy"></i><br> Not ready to take the plunge?</h2>
                     <p class="lead px-5">
                         not to worry, we have a range of resources available to help you get started on your next
@@ -305,6 +290,7 @@
                         see what we've done for other clients.
 
                     </p>
+                    <include src="./src/partials/pageBlocks/contactBtns.html"></include>
                 </div>
             </div>
         </div>
@@ -312,14 +298,14 @@
     </section>
 
     <section id="backToTop">
-        <button class="btn btn-secondary rounded-0 position-fixed" id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+        <button  class="btn btn-secondary rounded-0 position-fixed" id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
     </section>
 
     <footer class="border-top border-darker">
         <div class="container">
             <footer class="py-3 my-4 text-primary row justify-content-center d-flex">
                 <include src="./src/partials/pageBlocks/socialBtns.html"></include>
-                <p class="text-center">© 2024 Company, Inc</p>
+                <p class="text-center">© 2024 rocket.dev</p>
             </footer>
         </div>
     </footer>

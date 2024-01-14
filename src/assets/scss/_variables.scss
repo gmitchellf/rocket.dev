@@ -1,12 +1,108 @@
 // _variables.scss
+:root{
+    /* Main Colours (Plum/Orange) */
+    --textColor: #FFBA86;
+    --primary: #F6635C;
+    --secondary: #FFBA86;
+    --tertiary: #C23373;
+    --dark: #3D0A27;
+    --dark-transparent: rgba(61, 10, 39, 0.8);
+    --darker: #1F0A14;
 
-$white: #fff; // White
-$black: #000; // Black
+    --svgFins: var(--primary);
+    --svgBody: var(--secondary);
+    --svgRims: var(--tertiary);
+    --svgWindow: var(--dark);
+    --svgFlames1: var(--primary);
+    --svgFlames2: var(--secondary);
+    --svgText: var(--tertiary);
 
 
-$primary: #F6635C;
-$secondary: #FFBA86;
-$tertiary: #C23373;
-$dark: #3D0A27;
-$darkTransparent: rgba(61, 10, 39, 0.8);
-$darker: #1F0A14;
+    /* Alternative Colours (Blue/White)*/
+    --altTextColor: #3e7fcf;
+    --altPrimary: #365486;
+    --altSecondary: #3e7fcf;
+    --altTertiary: #154180;
+    --altDark: #ffffff;
+    --altDark-transparent: rgba(195, 178, 188, 0.8);
+    --altDarker: #ffffff;
+
+    --altSvgFins: #365486;
+    --altSvgBody: #3e7fcf;
+    --altSvgRims: #7FC7D9;
+    --altSvgWindow: rgba(16, 15, 16, 0);
+    --altSvgFlames1: darkorange;
+    --altSvgFlames2: #FFBA86;
+    --altSvgText: #3e7fcf;
+
+}
+
+// _colours.scss
+$white: white;
+$black: black; 
+
+/* */
+$text: var(--textColor);
+$primary: var(--primary);
+$secondary: var(--secondary);
+$tertiary: var(--tertiary);
+$dark: var(--dark);
+$darkTransparent: var(--dark-transparent);
+$darker: var(--darker); 
+$svgFins: var(--svgFins);
+$svgBody: var(--svgBody);
+$svgRims: var(--svgRims);
+$svgWindow: var(--svgWindow);
+$svgFlames1: var(--svgFlames1);
+$svgFlames2: var(--svgFlames2);
+$svgText: var(--svgText);
+/* */
+
+/*
+$text: var(--altTextColor);
+$primary: var(--altPrimary);
+$secondary: var(--altSecondary);
+$tertiary: var(--altTertiary);
+$dark: var(--altDark);
+$darkTransparent: var(--altDark-transparent);
+$darker: var(--altDarker); 
+$svgFins: var(--altSvgFins);
+$svgBody: var(--altSvgBody);
+$svgRims: var(--altSvgRims);
+$svgWindow: var(--altSvgWindow);
+$svgFlames1: var(--altSvgFlames1);
+$svgFlames2: var(--altSvgFlames2);
+$svgText: var(--altSvgText);
+*/
+
+
+// SVG Logo Colours
+
+//Full Colour Options
+.svg-Fins {
+    fill: $svgFins!important;
+}
+
+.svg-Body {
+    fill: $svgBody!important;
+}
+
+.svg-Rims {
+    fill: $svgRims!important;
+}
+
+.svg-Window {
+    fill: $svgWindow!important;
+}
+
+.svg-Flame1 {
+    fill: $svgFlames1!important;
+}
+
+.svg-Flame2 {
+    fill: $svgFlames2!important;
+}
+
+.svg-Text {
+    fill: $svgText!important;
+}

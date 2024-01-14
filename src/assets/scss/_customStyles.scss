@@ -160,28 +160,27 @@ section {
 
   .accordion-button {
     background-color: $primary;
-    color: $white;
+    color: $darker;
     border: 0;
     border-radius: 0 !important;
     box-shadow: none;
 
     &:hover {
       background-color: $secondary;
-      color: $dark;
+      color: $white;
 
       &::after {
-        filter: brightness(0);
+        filter: brightness(100);
       }
     }
 
     &::after {
-      filter: brightness(10);
+      filter: brightness(0);
     }
   }
 
   .accordion-body {
     background-color: $dark;
-    color: $white;
     border: 0;
     border-radius: 0;
   }

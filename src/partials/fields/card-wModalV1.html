@@ -1,0 +1,31 @@
+<div class="col-12 col-lg-4">
+    <div class="card text-center bg-transparent border-0 service-card">
+        <div class="card-header bg-darker">
+            <h3 class="card-title pt-2"><i class="{{ icon }}"></i><br> {{ title }}</h3>
+        </div>
+        <div class="card-body bg-dark">
+            <p class=" lead mb-4 ">
+                {{ description }}
+            </p>
+            <button type="button" class="btn btn-secondary rounded-0" data-bs-toggle="modal" data-bs-target="#{{ id }}">
+                read more <i class="fas fa-chevron-right"></i>
+              </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="{{ id }}" tabindex="-1" role="dialog" aria-labelledby="{{ id }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-0">
+            <div class="modal-header bg-darker rounded-0  border-0">
+                <h3 class="modal-title" id="exampleModalLabel"><i class="{{ icon }}"></i> {{ title }}</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark ">
+                <p class="lead">{{ longdescription }}</p>
+            </div>
+        </div>
+    </div>
+</div>

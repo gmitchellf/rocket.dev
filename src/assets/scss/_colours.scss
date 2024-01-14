@@ -27,6 +27,10 @@
 }
 
 // Text Colours
+body, .nav-link, .accordion-item{
+    color: $text;
+}
+
 .text-primary {
     color: $primary !important;
 }
@@ -69,27 +73,3 @@
     border-color: $darker !important;
 }
 
-// SVG Logo Colours
-
-//Full Colour Options
-.svg-color .cls-white {
-    fill: $white!important;
-}
-
-.svg-color .cls-primary {
-    fill: $primary!important;
-}
-
-.svg-color .cls-secondary {
-    fill: $secondary!important;
-}
-
-.svg-color .cls-tertiary {
-    fill: $tertiary!important;
-}
-
-// Monochrome Options
-
-.svg-mono .cls-white, .svg-mono .cls-primary, .svg-mono .cls-secondary, .svg-mono .cls-tertiary {
-    fill: $darker!important;
-}
