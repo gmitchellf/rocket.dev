@@ -1,11 +1,6 @@
 .DS_Store
-*.css
-*.css.map
 launch.json
 /node_modules
-/package.json
-/yarn.lock
 /.parcel-cache
-
 /package-lock.json
 /src/assets/external
